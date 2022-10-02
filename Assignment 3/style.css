@@ -1,0 +1,65 @@
+.wrapper {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+.header {
+  display: grid;
+  height: 10vh;
+  margin: 10px 120px 0px 120px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 35% 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+#logo {
+  font-weight: bolder;
+}
+a {
+  color: black;
+  font-size: smaller;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+.main {
+  display: grid;
+  height: 65vh;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "section aside";
+  margin: 0 120px 0 120px;
+}
+section {
+  grid-area: section;
+  display: grid;
+  align-content: center;
+}
+#button {
+  background-color: #2639ed;
+  color: white;
+  border-radius: 60px;
+}
+p {
+  font-size: smaller;
+}
+aside {
+  grid-area: aside;
+  display: grid;
+  align-content: center;
+}
+aside img {
+  height: 55vh;
+}
+.footer {
+  display: grid;
+  height: 20vh;
+  grid-template-columns: 25% 1fr 1fr 1fr 1fr;
+  margin: 0 120px 0 120px;
+  justify-self: center;
+  align-items: center;
+}
+.footer img {
+  width: 60%;
+}
