@@ -1,12 +1,12 @@
 .wrapper {
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
   overflow: hidden;
+  width: 100%;
 }
 .header {
   display: grid;
   height: 10vh;
-  margin: 10px 120px 0px 120px;
+  margin: 20px 100px 0px 100px;
 }
 .menu {
   display: grid;
@@ -26,40 +26,77 @@ a:hover {
 }
 .main {
   display: grid;
-  height: 65vh;
+  height: 60vh;
   grid-template-columns: 50% 50%;
   grid-template-areas: "section aside";
-  margin: 0 120px 0 120px;
+  margin: 0 0 50px 100px;
 }
 section {
   grid-area: section;
   display: grid;
   align-content: center;
+  gap: 10px;
+}
+section :last-child {
+  margin-left: -50px;
+}
+h2,
+h3 {
+  font-weight: 700;
+}
+.word {
+  font-size: smaller;
+  width: 70%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.parent {
+  position: relative;
+}
+.ornament {
+  position: relative;
+  top: 35%;
+  width: 60%;
 }
 #button {
   background-color: #2639ed;
   color: white;
   border-radius: 60px;
+  border: 1px solid #2639ed;
+  padding: 16px 45px 16px 45px;
+  position: absolute;
+  max-width: 100%;
+  right: 61%;
+  top: 23%;
 }
-p {
-  font-size: smaller;
-}
-aside {
+.aside {
   grid-area: aside;
   display: grid;
-  align-content: center;
+  position: relative;
 }
-aside img {
-  height: 55vh;
+.image1 {
+  position: relative;
+  right: 10%;
+}
+.image2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+.image3 {
+  position: absolute;
+  max-width: 100%;
 }
 .footer {
   display: grid;
   height: 20vh;
-  grid-template-columns: 25% 1fr 1fr 1fr 1fr;
-  margin: 0 120px 0 120px;
+  grid-template-columns: 30% 1fr 1fr 1fr 1fr;
+  margin: 0 100px 0 100px;
   justify-self: center;
   align-items: center;
 }
-.footer img {
-  width: 60%;
+footer img {
+  width: 50%;
 }
